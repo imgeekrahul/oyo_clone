@@ -5,7 +5,7 @@ import Block from './Block'
 const Header1 = () => {
   return (
     <div className='flex justify-between border-b-2 border-gray-300 items-center h-24 px-10'>
-        <Image src='/logo.png' width={200} height={200} className='w-28 h-28' />
+        <Image src='/logo.png' alt="Oyo Logo" width={200} height={200} className='w-28 h-28' />
         <div className='h-full flex'>
             <Block title={'Become a Member'} para={'Additional 10% off on stays.'} />
             <Block title={'OYO for business'} para={'Trusted by 5000 corporates.'} />

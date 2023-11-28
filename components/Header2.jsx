@@ -20,11 +20,11 @@ const Header2 = () => {
     ];
   return (
     <div>
-        <div className='flex px-10 bg-gray-100 justify-between'>
+        <div className='flex px-10 py-3 bg-gray-100 justify-between'>
             {
                 List.map((e) => {
                     return (
-                        <span>{e.name}</span>
+                        <span key={e.name}>{e.name}</span>
                     )
                 })
             }
