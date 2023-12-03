@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Block from './Block'
+import Link from 'next/link'
 
 const Header1 = () => {
   return (
@@ -13,7 +14,9 @@ const Header1 = () => {
             <Block title={'7979064070'} para={'Call us to book now.'} />
             <div className='flex items-center px-3'>
                 <Image src="./demo.svg" alt="demo" width={200} height={200} className='w-10 h-10 rounded-full mr-5' />
-                <h3 className='font-bold'>Login / Signup</h3>
+                <Link href="/login">
+                  <h3 className='font-bold'>Login / Signup</h3>
+                </Link>
             </div>
         </div>
     </div>
